@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //find()-return the first index value of element if satisfied otherwise return undefined..
+        //findIndex()-return first index position otherwise return -1
+        // let a=["abhi","kum","sharma","kum"]
+        // let b=a.find(add);
+        // let c=a.findIndex(add);
+        // function add(item){
+        //     return item === "kum"
+        // }
+        // console.log(b);
+        // console.log(c);
+
+
+        // let a = [
+        //     {
+        //         name: "abhi",
+        //         age: 25
+        //     },
+        //     {
+        //         name: "kum",
+        //         age: 26
+        //     },
+        //     {
+        //         name: "sha",
+        //         age: 28
+        //     }
+        // ]
+        // let b = a.find(fun)
+
+        // function fun(item){
+        //     return item.age===28
+        // }
+        // console.log(b);
+
+
+        //Array map() function....
+
+        // var array=[1,2,3,4,5,6]
+        // var b=array.map(test)
+        
+        // document.write(b);
+        
+        // function test(x){
+        //     return x*10
+        // }
+
+
+        var ary=[
+            {
+                fname:"abhinav",
+                lname:"kumar"
+        },{
+                fname:"abhi",
+                lname:"sharma"
+        },{
+                fname:"dog",
+                lname:"singh"
+        }
+    ]
+    var b=ary.map(fun)
+    function fun(item){
+        return item.fname+" "+item.lname 
+    }
+    document.write(b)
+
+
+    </script>
+</body>
+
+</html>
