@@ -162,19 +162,56 @@
 // console.log("data1",data1);
 
 
-let data = [1, 2, 3, 4, 5]
+// let data = [1, 2, 3, 4, 5]
 
-console.log("original_Array", data);
+// console.log("original_Array", data);
 
-let reverse_Array = []
+// let reverse_Array = []
 
-for (let i = data.length - 1; i >= 0; i--) {
-    console.log(data);
-    let data1=reverse_Array.pop(data)
-    console.log("data1",data1);
-    // reverse_Array.push(data[i])
-    // console.log(data[i]);
-    // console.log(reverse_Array);
+// for (let i = data.length - 1; i >= 0; i--) {
+//     console.log(data);
+//     let data1=reverse_Array.pop(data)
+//     console.log("data1",data1);
+//     // reverse_Array.push(data[i])
+//     // console.log(data[i]);
+//     // console.log(reverse_Array);
+// }
+
+// // console.log(reverse_Array);
+
+///////////////////////////////////////////////////////////
+
+
+// var data = [1, 2, 3, 4, 1, 2, 1, 2]
+
+let store = []
+let data1 = ((data) => {
+    setTimeout(()=>{
+        for (let i = 0; i < data.length; i++) {
+            for (let j = i + 1; j < data.length; j++) {
+                if (data[i] == data[j]) {
+                    store.push(data[i])
+                }
+            }
+        }
+        console.log("store", store);
+    },2000)
+})
+data1([1, 2, 3, 4, 1, 2, 1, 2])
+
+function f2(){
+    console.log();
 }
 
-// console.log(reverse_Array);
+
+//////////////////////////////////////////////////////////
+
+
+
+// function f1(a){
+//     // console.log("a",a);
+//     return a;
+// }
+
+// let x=f1([1,2,3])
+// console.log(x);

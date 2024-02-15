@@ -837,6 +837,19 @@
 // console.log(x-y);
 
   
+// let a=[1,2,3,4,5]
+// let result = a.find(element => element > 3);
+
+// console.log(result); // Output: 3
+
+// let x;
+
+// function f1(){
+//     console.log(x);
+// }
+// x=5;
+// f1()
+
 
 
 
