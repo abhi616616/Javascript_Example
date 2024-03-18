@@ -177,7 +177,7 @@
 //     },2000)
 //     callback
 // }
-    
+
 // function fun2(){
 //     console.log("hello fun2");
 // }
@@ -186,5 +186,180 @@
 
 
 // 2. Write a function that takes an array of objects and a key, and returns a new array sorted based on the values of that key in ascending order. 
+
+
+// const data = [
+//     { name: 'madan', age: '12' },
+//     { name: 'man', age: '13' },
+//     { name: 'dan', age: '14' },
+//     { name: 'dam', age: '11' },
+//     { name: 'ram', age: '17' },
+//   ];
+
+//   console.log("previous data",data);
+
+//   console.log("After assending order sorting Age only");
+
+
+// let sortedData=data.sort((a,b)=>{
+//     return a.age-b.age
+//     // console.log(a.age-b.age);
+// })
+// console.log("sortedData",sortedData);
+
+// let data = [
+//     { age: 5 },
+//     { age: 2 },
+//     { age: 8 }
+// ]
+
+//  data = data.sort((a, b) => {
+//     return a.age - b.age
+// })
+// console.log(data);
+
+// let data1=data.map((e)=>{
+//     return e.age
+// })
+// console.log(data1);
+
+
+// var obj = JSON.parse('{"firstName":"John", "lastName":"Doe"}');
+// // console.log(obj);
+
+// var obj = { "name":"John", "age":30, "city":"New York"};
+// // var myJSON = JSON.stringify(obj);
+// console.log(obj);
+// // console.log(myJSON);
+
+
+// 2. Implement a function to reverse a string without using the built-in reverse() method. 
+
+// let names="abhinav"
+// let rev=""
+
+// for(let i=names.length-1;i>=0;i--){
+//     console.log(i);
+//     rev=rev+names[i]
+// }
+// console.log(rev);
+
+
+// 3. Given an array of numbers, write a function to find the largest and smallest numbers in the array. 
+
+// let arr = [5, 4, 3, 9, 8, 7]
+
+// let max = arr[0]
+// let min = arr[0]
+
+// function f1() {
+//     for (let i = 0; i < arr.length; i++) {
+//         // console.log(arr[i]);
+//         if (arr[i] > max) {
+//             max = arr[i]
+//         }
+//     }
+
+//     for (let i = 0; i < arr.length; i++) {
+//         // console.log(arr[i]);
+//         if (arr[i] < min) {
+//             min = arr[i]
+//         }
+//     }
+//     return [ max, min ]
+// }
+
+// console.log(f1());
+
+
+// 3. Given an array of numbers, write a function to find the largest and smallest numbers in the array. 
+
+
+// function findMax(arr){
+//     let min=Math.min(...arr)
+//     let max=Math.max(...arr)
+
+//     return [min, max]
+// }
+
+// console.log(findMax([5, 4, 3, 9, 8, 7]));
+
+
+
+// 9. Implement a function to remove duplicates from an array. 
+
+// let arr=[1,2,3,4,5,1,2,3,4,2]
+
+// // console.log(new Set(arr));
+// let data=Array.from(new Set(arr))
+// console.log(data);
+
+///////////////////////////////////////////////////////
+
+// function f1(arr){
+//     return Array.from(new Set(arr))
+// }
+
+// console.log(f1([1,2,3,4,5,1,2,3,4,2]));
+
+// // Implement a function to remove duplicates from an array. 
+// let arr=[1,2,3,4,5,1,2,3,4,2]
+
+// for(let i=0;i<arr.length;i++){
+//     // console.log(arr[i]);
+//     for(let j=0;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 2];
+// let uniqueArr = [];
+// let isDuplicate = false;
+
+// for (let i = 0; i < arr.length; i++) {
+    
+
+//     for (let j = 0; j < uniqueArr.length; j++) {
+//         console.log(j);
+//         if (arr[i] === uniqueArr[j]) {
+//             isDuplicate = true;
+//             break;
+//         }
+//     }
+//     if (!isDuplicate) {
+//         uniqueArr.push(arr[i]);
+//     }
+// }
+
+// console.log(uniqueArr);
+
+
+// let arr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 2];
+
+// let uniqueArray=[]
+// let findDuplicate=false
+
+// for(let i=0;i<arr.length;i++){
+//     for(let j=0;j<uniqueArray.length;j++){
+//         if(arr[i]===uniqueArray[j]){
+//             findDuplicate=true
+//             break;
+//         }
+//     }
+//     if(!findDuplicate){
+//         uniqueArray.push(arr[i])
+//     }
+// }
+// console.log(uniqueArray);
+
+
+// 10. Write a function that sorts an array of numbers in ascending order. 
+
+// let arr=[5,4,8,9,3,2,11]
+
+// arr.sort((a,b)=>a-b)
+// console.log(arr);
 
 

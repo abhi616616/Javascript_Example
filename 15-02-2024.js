@@ -252,7 +252,153 @@
 // console.log(a);  // error occur // assignment to constant variable
 
 
+/////////////////////////////////////////////////////
+
+// protoType in JS
+
+// in js prototype are a fundamental of object oriented programming model, 
+// every javascript object have a prototype property
+// All javascript object inherit a property and method from a protoType. 
+
+// below example is for object
+
+// let obj={
+//     name:"abhinav",
+//     getName:function(){
+//         return this.name
+//     }
+// }
+
+// let obj1={
+//     roll:10,
+//     __proto__:obj
+// }
+
+// console.log(obj1.getName(),obj1);
+// // console.log(obj1);
+
+//////////////////////////////////////////////////////////
+
+// let obj={
+//     name:"abhinav",
+//     getName:function(){
+//         return this.name
+//     },
+//     cource:"Btech"
+// }
+
+// let obj1={
+//     id:123,
+//     address:"New Delhi",
+//     name:"Kumar",
+//     __proto__:obj
+// }
+
+// let obj2={
+//     roll:1,
+//     __proto__:obj1
+// }
+
+// console.log(obj2);
+// console.log(obj2.cource);
+// console.log(obj2.getName());
+// console.log(obj2.id);
+// console.log(obj2.address);
 
 
+///////////////////////////////////////////
+
+
+// events in node js....
+
+// every action perform on a cmputer is an events like connection is stablished, or a file opened.
+// to fire an event use a .emit() method, .emit is used to trigger that event.
+// .on is used to attach a listener function to an event,
+
+
+// const EventEmitter=require("events")
+
+// const myEmitter=new EventEmitter();
+
+// myEmitter.on("greet",(name)=>{
+//     console.log(`Hello, ${name}!`);
+// })
+
+// myEmitter.on("greet",(name)=>{
+//     console.log(`Greetings, ${name}!`);
+// })
+
+// myEmitter.emit("greet","abhinav")
+
+
+//////////////////////////////////////////////////////////////////
+
+// Hoisting in js
+// hoisting is a js features where variable and functions declaration are moved on the top of the scope during the compilation phase.
+
+// let a;
+// a=6;
+// console.log(a);
+
+
+// console.log(x);
+// var x = 5;
+// console.log(x); 
+
+// fun()
+
+// function fun(){
+//     console.log("hello fun");
+// }
+
+
+// let data;
+// function fun(){
+//     console.log("data",data);
+// }
+// data=5;
+// fun()
+
+
+// forEach function.
+
+// let data=[1,2,3,4,5]
+
+// let data=[{
+//     name:"abhinav"
+// },
+// {
+//     roll:1
+// }]
+
+// let data1=data.forEach((item)=>{
+//     console.log(item);
+// })
+
+
+
+// map function in js
+
+// var List = [10,12,15,30];
+// var updatedList=List.map((item)=>{
+//     return item*2
+// })
+
+// console.log(updatedList);
+
+
+// filter function in js
+
+//filter
+
+// var List = [10,12,15,30];
+// var updatedList = List.filter(function(list){ return list %  2 == 0  }); 
+// console.log("original List" ,List)  //Original array not Modified
+// console.log("Updated List" , updatedList) //Returns new array
+
+
+// Cluster..........................
+
+// Clustering in Node. js involves creating multiple worker processes that share the incoming workload.
 
 
