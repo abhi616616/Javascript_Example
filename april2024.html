@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <p id="GFG"></p>
+    <button onclick="clearInterval(myVar)">
+        Stop Execution</button>
+ 
+    <script>
+        let myVar = setInterval(myTimer, 2000);
+ 
+        function myTimer() {
+            document.getElementById("GFG")
+                .innerHTML += "<p>Hi</p>";
+        }
+    </script>
+</body>
+ 
+</html>

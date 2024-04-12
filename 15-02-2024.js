@@ -19,6 +19,7 @@
 //     console.log("function f2 calling");
 // }
 
+
 // f1(()=>{
 //     // console.log(`callback is executed`);
 // },1,2,3)
@@ -63,6 +64,8 @@
 //     console.log(sum);
 // })
 // mainFunction(add)
+
+
 
 
 ///////////////////////////////////////////////////////
@@ -218,9 +221,10 @@
 
 // function foo(){
 //     let a=1;
-
+//     let b=2;
 //     function inner(){
-//         return a
+//         // return a
+//         return c=a+b
 //     }
 //     return inner
 // }
@@ -400,5 +404,141 @@
 // Cluster..........................
 
 // Clustering in Node. js involves creating multiple worker processes that share the incoming workload.
+
+
+// let data=[1,2,3,4,5]
+// let sum=0;
+// let data1=data.map((item)=>{
+//     // console.log(item);
+//     sum=sum+item
+//     // return sum
+// })
+// console.log([sum]);
+
+
+///////////////
+
+//////  callback example.....
+
+// function fun1(callback){
+//     console.log("hello fun1");
+//     setTimeout(()=>{
+//         console.log("callback is calling...");
+//         callback([1,2,3])
+//     },2000)
+// }
+
+// function fun2(array){
+//     let sum=0;
+//     for(let i of array){
+//         sum=sum+i
+//     }
+//     console.log(sum);
+// }
+
+// fun1(fun2)
+
+
+//////  promises.
+
+// let promise=new Promise((resolve,reject)=>{
+//     let a=2;
+//     let b="2"
+
+//     if(a===b){
+//         resolve()
+//     }
+//     else{
+//         reject()
+//     }
+
+// })
+// promise.then(()=>{
+//     console.log("resolve");
+// })
+// .catch((error)=>{
+//     console.log("rejected");
+// })
+
+
+///////////////////////////
+
+// function binarySearch(arr,target){
+
+//         let start=0;
+//         let end=arr.length-1
+     
+     
+//         while(start<=end){
+//             let mid=Math.floor((start+end)/2);
+     
+//             if(target === arr[mid]){
+     
+//                 // return console.log("Yes");
+//                 return arr[mid]
+//             }
+     
+//             if(arr[mid]>target){
+//                 end=mid-1
+//             }
+//             else if(arr[mid]<target){
+//                 start=mid+1
+//             }
+//         }
+//         return -1
+     
+//     }
+     
+//     const arr=[1,2,3,4,5]
+//     const target=4;
+     
+     
+//     // console.log(binarySearch([1,2,3,4,5],5));
+//     let x=binarySearch(arr,target)
+//     console.log("xxxxx",x);
+ 
+//     if(binarySearch(arr,target) !== -1){
+//         console.log("found");
+//     }
+//     else{
+//         console.log("not found");
+//     }
+
+
+//////////////////////////////////
+
+
+// let data = "abhinavKLIY@#123$"
+
+// let rev="";
+// let sum=0;
+// let count=0;
+// // let avg=0;
+
+// // for(let i=data.length-1;i>=0;i--){
+// //     // rev=rev+data[i]
+// //     // console.log(data[i]);
+// //     if(data[i]>="a" && data[i]<="z" || data[i]>="A" && data[i]<="Z" || data[i]>="0" && data[i]<="9"){
+// //         // console.log(data[i]);
+// //         rev=rev+data[i]
+// //     }
+// // }
+
+// for(let i=data.length-1;i>=0;i--){
+//     // console.log(data[i]);
+//     if(data[i]>="0" && data[i]<="9")
+//     {
+//         // console.log(data[i]);
+//         sum=sum+parseInt(data[i])
+//         count++;
+//     }
+// }
+// console.log(sum);
+// let avg=sum/count
+// console.log(avg);
+// // console.log(count);
+
+
+
 
 

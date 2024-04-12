@@ -5,18 +5,18 @@
 //  when the promise is fulfilled that time it will print the value.
 //  when promise is rejected that time print a error.
 
-// let promise= new Promise((resolve,reject)=>{
-//     let a=2;
-//     let b=2;
+let promise= new Promise((resolve,reject)=>{
+    let a=2;
+    let b=2;
 
-//     if(a===b){
-//         resolve()
-//     }
-//     else{
-//         reject()
-//     }
+    if(a===b){
+        resolve()
+    }
+    else{
+        reject()
+    }
 
-// })
+})
 // promise.then(()=>{
 //     console.log("promise is resolved");
 // }).catch((error)=>{
@@ -162,16 +162,22 @@
 // var arr = [8,4,9,1,4];
 // bubbleSort(arr);
 
-let arr=[10,9,7,4]
-let temp=0
-for(let i=0;i<arr.length;i++){
-    for(let j=i+1;j<arr.length;j++){
-        if(arr[i]>arr[j]){
-            temp=arr[i]
-            arr[i]=arr[j]
-            arr[j]=temp
-        }
-    }
-}
-console.log(arr);
+
+
+// let arr=[10,9,7,4]
+// let temp=0
+// for(let i=0;i<arr.length;i++){
+//     console.log("i",i);
+//     for(let j=i+1;j<arr.length;j++){
+//         console.log("j",j);
+//         if(arr[i]>arr[j]){
+//             temp=arr[i]
+//             arr[i]=arr[j]
+//             arr[j]=temp
+//         }
+//     }
+// }
+// console.log(arr);
+
+
 
